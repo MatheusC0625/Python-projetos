@@ -13,3 +13,16 @@ while True:
         soma = soma + nota
     media = soma / alunos
     print(f"Média da classe: {media:.2f}")
+
+ elif escolha == 2:
+    soma = 0
+    contador = 0
+    quantidade_notas = int(input("Quantida de notas: "))
+    while contador != quantidade_notas:
+        contador = contador + 1
+        nota = float(input(f"Nota {contador}: "))
+        soma = soma + nota
+    media = soma / quantidade_notas
+    print(f"Média: {media}")
+ else:
+   print("Opção inválida!")
