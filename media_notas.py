@@ -1,7 +1,7 @@
 print("===Média de Notas===")
 
 while True:
- escolha = int(input(f"1 - Calcular média da turma\n2 - Calcular minha média\n"))
+ escolha = int(input(f"1 - Calcular média da turma\n2 - Calcular minha média\n3- Sair\n"))
 
  if escolha == 1:
     soma = 0
@@ -24,5 +24,13 @@ while True:
         soma = soma + nota
     media = soma / quantidade_notas
     print(f"Média: {media}")
+    if media >= 6.0:
+       print("Aprovado!")
+    else:
+       print("Reprovado!")
+ elif escolha == 3:
+    print("Encerrando o programa.")
+    break
+    
  else:
    print("Opção inválida!")
